@@ -1,0 +1,22 @@
+h1 {
+    text-align: center;
+}
+
+div{
+    /* border: 1px solid yellow; */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+button{
+    margin-right: 20px;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td{
+    padding:10px;
+}

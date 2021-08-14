@@ -1,0 +1,57 @@
+section#hero {
+    border: 1px solid blue;
+    height: 70vh; 
+
+    /* full height/width bg img */
+    background-image: url("/assets/laptop-and-desk.png"), 
+    linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)); /* Overlay a color over img */
+    background-blend-mode: overlay; /* Use with linear-gradient; makes text/button pop */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#hero{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+
+#hero h1 {
+    color: white;
+    font-size: 40px;
+}
+
+button {
+    border:1px solid #fff200;
+    background-color: #fff200;
+    border-radius: 30px;
+    cursor: pointer; /* On mouse hover, icon will change */
+    padding: 12px 20px; /* Make button bigger */
+    font-weight: bold;
+}
+
+/* For better UX; lets user know button is clickable */
+button:hover {
+    background-color: #fffa65;
+    border-color: #fffa65;
+}
+
+div{
+    /* border: 3px solid yellow; To visually see the div */
+    text-align: center;
+}
+
+#who-we-are{
+    text-align: center;
+}
+
+#who-we-are h1{
+    font-size: 30px
+}
+
+/* To center, and decrease the width of this particular section */
+#who-we-are div{
+    width: 50vw;
+    margin: 0 auto;
+}

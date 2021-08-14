@@ -1,0 +1,15 @@
+<h1>Job Details</h1>
+<p *ngIf="(job|json) === '{}'; else jobdetails ">
+    Sorry, there is no job matching the specified ID
+</p>
+<ng-template #jobdetails>
+<h2>{{ job.title }} and {{ job.location }}</h2>
+<div>
+<p>A condimentum quis sed varius at quis imperdiet nunc suspendisse ullamcorper eros placerat vestibulum montes a vestibulum vestibulum eu fringilla class erat a id vestibulum ut laoreet tempor habitasse ad. A facilisi elit condimentum nullam ullamcorper morbi parturient est orci felis tempus sapien suscipit dui mi vulputate lobortis leo. Eu nibh vestibulum a augue leo consectetur id enim placerat aptent a arcu in a ac ullamcorper hac. Quis tempus amet adipiscing eu posuere parturient id penatibus taciti varius ullamcorper a varius interdum interdum scelerisque imperdiet senectus consectetur.
+A ultricies a adipiscing id nascetur eget vitae adipiscing egestas fringilla ipsum per volutpat platea erat vitae. Penatibus conubia vestibulum eros luctus egestas nec vitae rutrum fringilla adipiscing praesent fusce sociosqu habitasse interdum adipiscing. A vestibulum amet litora ad bibendum eros molestie malesuada a dui class adipiscing eget himenaeos consectetur non. Conubia a dapibus duis a euismod a mi at curae justo vivamus a a accumsan a malesuada a id montes.
+Elit eu.</p>
+<p>Taciti habitant sed dapibus condimentum orci congue fames integer velit lobortis sociis eu luctus enim dapibus id est parturient dolor a congue nascetur dui cubilia ut scelerisque scelerisque a quis.Fames eu adipiscing maecenas suspendisse a ornare vitae id nunc condimentum sed adipiscing suspendisse vestibulum posuere nascetur fringilla dapibus hac felis.A ullamcorper adipiscing inceptos ultricies neque volutpat quisque enim ullamcorper a tellus mattis class inceptos vitae tristique cras blandit vehicula integer sociosqu erat fames lobortis id.Nunc pharetra.</p>
+</div>
+</ng-template>
+
+<button (click)="goBack()">Go Back</button>
